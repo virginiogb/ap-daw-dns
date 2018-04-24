@@ -1,0 +1,21 @@
+;
+; BIND data file for local loopback interface
+;
+$ORIGIN 0.168.192.in-addr.arpa.
+$TTL	2D
+@	IN	SOA	admin  root (
+			      20180327		; Serial
+			 1D		; Refresh
+			  2H		; Retry
+			1W		; Expire
+			 2D 	        ; Negative Cache TTL
+)
+;
+        IN      NS      admin.practicadaw.net.
+
+103	IN	PTR	pc1.practicadaw.net.
+108	IN	PTR	pc2.practicadaw.net.
+110	IN	PTR	pc3.practicadaw.net.
+110     IN      PTR     correos.practicadaw.net.
+108     IN      PTR     ftp.practicadaw.net.
+

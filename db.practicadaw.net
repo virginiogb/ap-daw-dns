@@ -1,0 +1,23 @@
+;
+; BIND data file for local loopback interface
+;
+$ORIGIN practicadaw.net.
+$TTL	2D
+@	IN	SOA	admin  root (
+			      20180327		; Serial
+			 1D		; Refresh
+			  2H		; Retry
+			1W		; Expire
+			 2D 	        ; Negative Cache TTL
+)
+;
+        IN      NS      admin
+admin	IN	A	192.168.0.103
+
+
+pc1              CNAME   admin
+pc2	IN	A	192.168.0.108
+pc3	IN	A	192.168.0.110
+ftp     IN      A       192.168.0.108
+correos IN      A       192.168.0.110 
+
